@@ -1,0 +1,9 @@
+#container { 
+    display: grid; 
+    grid-template-columns: auto auto;
+    border-color: black; }
+
+.content {
+    border-width: 5px;
+    border-color: aqua;
+}
