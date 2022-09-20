@@ -1,9 +1,10 @@
 #container { 
     display: grid; 
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(16, auto);
     border-color: black; }
 
-.content {
-    border-width: 5px;
-    border-color: aqua;
+.initialGrid {
+    border-style: solid;
+    border-color: lightpink;
+    
 }
