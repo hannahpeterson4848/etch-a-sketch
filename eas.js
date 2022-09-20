@@ -6,7 +6,6 @@ function createInitialGrid () {
     for (let i=0; i<initialGrid; i++) {
         let newDiv = document.createElement('div');
         newDiv.classList.add('initialGrid');
-        newDiv.innerHTML = initialGrid[i];
         container.appendChild(newDiv);
     }
 }
