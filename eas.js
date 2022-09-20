@@ -15,7 +15,7 @@ function createInitialGrid () {
     //let fragment = document.createDocumentFragment ();
     for (let i=0; i<=initialGrid; i++) {
         let e = document.createElement('div');
-        
+        e.classList.add('initialGrid');
         e.innerHTML = initialGrid[i];
         container.appendChild(e);
     }
