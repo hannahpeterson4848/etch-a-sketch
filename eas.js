@@ -1,7 +1,4 @@
-const container = document.querySelector('#container');
-
 let initialGrid = (16*16);
-
 function createInitialGrid () {
     for (let i=0; i<initialGrid; i++) {
         let newDiv = document.createElement('div');
@@ -9,5 +6,4 @@ function createInitialGrid () {
         container.appendChild(newDiv);
     }
 }
-
 createInitialGrid ();
