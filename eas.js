@@ -4,6 +4,10 @@ function createInitialGrid () {
         let newDiv = document.createElement('div');
         newDiv.classList.add('initialGrid');
         container.appendChild(newDiv);
+        newDiv.addEventListener("mouseenter", function () {
+            newDiv.style.cssText = "background-color: blue";
+        });
     }
 }
 createInitialGrid ();
+
