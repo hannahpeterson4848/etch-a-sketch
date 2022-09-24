@@ -6,6 +6,12 @@
     gap: 2px;
  }
 
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .initialGrid {
     border-style: solid;
     border-color: lightpink;
