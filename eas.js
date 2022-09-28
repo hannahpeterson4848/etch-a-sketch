@@ -15,10 +15,12 @@ createInitialGrid ();
 
 document.querySelector('.button').addEventListener('click', promptGridSize)
 
+const gridElement = document.getElementById("container");
+
 function promptGridSize () {
     let promptUser = prompt("Please enter a number, between 1 and 100, for the numbers of squares per side of the new grid");
     if (promptUser < 100 && promptUser > 0) {
-            updateGrid ();
+            updateGrid (promptUser);
         } else if (promptUser === null){
             return;
         } else {
@@ -26,12 +28,12 @@ function promptGridSize () {
     }
 }
 
-const gridElement = document.querySelector("#container");
-
-function updateGrid () {
-    gridElement.style["grid-template-columns"] = "repeat(promptUser)";
-    gridElement.style["grid-template-rows"] = "repeat(promptUser)";
+function updateGrid (promptUser) {
+    gridElement.style.gridTemplateColumns = "repeat(promptUser, 8px)";
+    gridElement.style.gridTemplateRows = "repeat(promptUser, 8px)";
     body.appendChild(gridElement);
+    console.log(promptUser);
+    
 }
 
 
