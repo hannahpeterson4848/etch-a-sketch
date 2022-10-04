@@ -1,9 +1,19 @@
-#container { 
+/*#initialContainer { 
     display: grid; 
     grid-template-columns: repeat(16, 24px);
     grid-template-rows: repeat(16, 24px);
     border-color: black;
-    gap: 2px;
+    border-style: solid;
+    width: 400px;
+    height: 400px;
+ }*/
+
+ #container { 
+    display: grid; 
+    border-color: black;
+    border-style: solid;
+    width: 400px;
+    height: 400px;
  }
 
 #body {
@@ -21,7 +31,11 @@
 
 .initialGrid {
     border-style: solid;
-    border-color: lightpink;
+    border-color: green;
     height: 24px;
     width: 24px;
+}
+
+.userGrid {
+    border: .5px solid green;
 }
