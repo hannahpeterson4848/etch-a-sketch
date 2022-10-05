@@ -1,19 +1,10 @@
-let initialGrid = (16*16);
-
-//create initial 16 div x 16 div grid
-function createInitialGrid () {
-    for (let i=0; i<initialGrid; i++) {
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('initialGrid');
-        container.appendChild(newDiv);
-        //add the 'hover' effect for the etch-a-sketch
-        newDiv.addEventListener("mouseenter", function () {
-            newDiv.style.cssText = "background-color: blue";
-        });
-    }
+//generate initial 16x16 grid when webpage initially loads
+function createOpeningGrid () {
+    let promptUser = 16;
+    updateGrid (promptUser);
 }
 
-//createInitialGrid ();
+createOpeningGrid ();
 
 document.querySelector('.button').addEventListener('click', promptGridSize)
 
@@ -29,7 +20,7 @@ function promptGridSize () {
     }
 }
 
-//update the grid per the number the user input
+//update the grid per the number the user inputs
 function updateGrid (promptUser) {
     let newGridDivs = (+promptUser)*(+promptUser);
     for (let i=0; i<newGridDivs; i++) {
@@ -55,3 +46,5 @@ test.addEventListener('click', ()=>{
 function resetGrid () {
    location.reload();
 }
+
+

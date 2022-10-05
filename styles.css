@@ -34,13 +34,6 @@
     border-radius: 8px; 
 }
 
-.initialGrid {
-    border-style: solid;
-    border-color: green;
-    height: 24px;
-    width: 24px;
-}
-
 .userGrid {
     border: .5px solid green;
 }
