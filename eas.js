@@ -10,6 +10,9 @@ document.querySelector('.button').addEventListener('click', promptGridSize)
 
 //prompt user to enter a number from 0-100
 function promptGridSize () {
+    //reset grid
+    container.innerText="";
+    //prompt user for new grid dimensions
     let promptUser = prompt("Please enter a number, between 1 and 100, for the numbers of squares per side of the new grid");
     if (promptUser < 100 && promptUser > 0) {
             updateGrid (promptUser);
