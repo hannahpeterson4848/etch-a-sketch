@@ -22,11 +22,16 @@
     align-items: center;
 }
 
-.button {
+.button{
     margin: 16px;
     background-color: beige;
-    border-radius: 8px;
-    
+    border-radius: 8px; 
+}
+
+#resetButton {
+    margin: 16px;
+    background-color: beige;
+    border-radius: 8px; 
 }
 
 .initialGrid {

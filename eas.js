@@ -5,7 +5,7 @@ function createInitialGrid () {
     for (let i=0; i<initialGrid; i++) {
         let newDiv = document.createElement('div');
         newDiv.classList.add('initialGrid');
-        initialContainer.appendChild(newDiv);
+        container.appendChild(newDiv);
         //add the 'hover' effect for the etch-a-sketch
         newDiv.addEventListener("mouseenter", function () {
             newDiv.style.cssText = "background-color: blue";
@@ -46,4 +46,12 @@ function updateGrid (promptUser) {
         newContainer.style.gridTemplateRows = `repeat(${+promptUser}, 1fr)`;
 }
 
+//reset the etch a sketch grid
+let test = document.querySelector('#resetButton');
+test.addEventListener('click', ()=>{
+    resetGrid();
+});
 
+function resetGrid () {
+   location.reload();
+}
